@@ -1,4 +1,4 @@
-// this a subset of the features that LoL events provides - however,
+// this a subset of the features that Overwatch events provides - however,
 // when writing an app that consumes events - it is best if you request
 // only those features that you want to handle.
 //
@@ -10,7 +10,6 @@ var g_interestedInFeatures = [
   'preGame',
   'postGame',
   'player'
-  // 'gold'
 ];
 
 function registerEvents() {
@@ -19,7 +18,7 @@ function registerEvents() {
     console.log("Error: " + JSON.stringify(info));
   });
 
-  // "static" data changed (total kills, username, steam-id)
+  // "static" data changed
   // This will also be triggered the first time we register
   // for events and will contain all the current information
   overwolf.games.events.onInfoUpdates2.addListener(function(info) {
@@ -54,7 +53,7 @@ function gameLaunched(gameInfoResult) {
     return false;
   }
 
-  console.log("LoL Launched");
+  console.log("Overwatch Launched");
   return true;
 
 }
@@ -74,7 +73,7 @@ function gameRunning(gameInfo) {
     return false;
   }
 
-  console.log("LoL running");
+  console.log("Overwatch running");
   return true;
 
 }
