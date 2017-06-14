@@ -9,7 +9,8 @@ var g_interestedInFeatures = [
   'death',
   'preGame',
   'postGame',
-  'player'
+  'player',
+  'roster'
 ];
 
 function registerEvents() {
