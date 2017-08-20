@@ -6,7 +6,7 @@
 // features
 var g_interestedInFeatures = [
   'kills',
-  'multi_kills',
+  'multi_kill',
   'death',
   'preGame',
   'postGame',
