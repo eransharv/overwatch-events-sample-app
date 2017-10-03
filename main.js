@@ -108,7 +108,7 @@ overwolf.games.onGameInfoUpdated.addListener(function (res) {
 
 overwolf.games.getRunningGameInfo(function (res) {
   if (gameRunning(res)) {
-    //registerEvents();
+    registerEvents();
     setTimeout(setFeatures, 1000);
   }
   console.log("getRunningGameInfo: " + JSON.stringify(res));
