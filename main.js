@@ -11,7 +11,8 @@ var g_interestedInFeatures = [
   'preGame',
   'postGame',
   'player',
-  'roster'
+  'roster',
+  'gameMode'
 ];
 
 function registerEvents() {
